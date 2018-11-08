@@ -24,6 +24,13 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
+	const result = [];
+	names.filter(name => {
+		if (name.includes('Stark')) {
+			result.push(name);
+		}
+	});
+	return result;
 }
 
 // Ne pas modifier l'export
